@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-box1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: bisque;
+  flex-wrap: wrap;
+}
+.circle-item {
+  padding: 20px;
+}
+.circle-item1{
+  display: flex;
+}
+.profile{
+  border: 1px solid black;
+  border-radius: 250px;
+  width: 80px
+}
+.circle-item1 h3{
+  padding-left: 10px;
+  padding-top: 20px;
+  color: black;
+  font-size: 18px;
+}
+.circle-item1 p{
+  padding-left: 10px;
+  color: black;
+  font-size: 12px;
+}
+
+.flex-box2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: burlywood;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.square-item {
+  background-color: rgb(96, 96, 231);
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.square-item1{
+  display: flex;
+}
+.square-item1 h3{
+  padding: 10px;
+  color: white;
+}
+.square-item1 p{
+  padding: 10px;
+  color: white;
+}
+
+.flex-box3 {
+  display: flex;
+  gap: 10px;
+  background-color:  bisque;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rec-item {
+  padding: 20px;
+}
+.rec-item1 h3{
+ padding-top: 10px;
+  color:black;
+}
+.rec-item1 p{
+  padding-top: 10px;
+  color: black;
+}
+

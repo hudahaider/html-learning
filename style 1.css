@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.red{
+    color: red;
+    font-size: 35px;
+    padding: 30px;
+    background-color: black;
+    margin: 10px;
+}
+.mainpara{
+    font-size: 22px;
+    padding: 10px;
+    background-color:rgb(205, 205, 113) ;
+    margin-left: 150px; 
+    margin-right: 150px; 
+}
+.para{
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    background-color: beige;
+}
+.blue{
+    color: blue;
+    margin: 10px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(151, 170, 229);
+
+}
+.violet{
+    color: rgb(111, 37, 180);
+    margin: 10px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(173, 115, 173);
+}
+.green{
+    color: rgb(7, 99, 7);
+    margin: 10px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(100, 160, 88);
+}
+.brown{
+    color: rgb(168, 54, 54);
+    margin: 10px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(197, 123, 128);
+}

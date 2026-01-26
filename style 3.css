@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+.heading h1{
+   padding: 15px;
+}
+.headerline {
+  color: rgb(4, 4, 52);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.hero{
+  background-image: url("assets/image2.jpg"); 
+  min-height: 100vh; /* full viewport height */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* KEY for responsiveness */
+}
+.hero h2{
+    color: white;
+    font-size: 50px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.hero p{
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    padding-left: 150px;
+}
+.quote{
+    color: white;
+    font-size: 18px;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+
+.cantainer1{
+    padding: 50px;
+    background-color: rgb(110, 154, 154);
+    display: flex;
+}
+@media screen and (max-width:480px) {
+  .cantainer1{
+    flex-direction: column;
+  }
+  
+}
+
+
+
+.list h3{
+    font-size: 30px;
+    padding: 30px;
+}
+.list ul{
+    padding-inline: 60px;
+}
+
+
+.cantainer2{
+    background-color: rgb(184, 206, 206);
+    padding: 50px;
+}
+.cantainer2 h3{
+     font-size: 30px;
+    padding: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+#special {
+  background-color: #9a9696;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.highlight {
+  color: rgb(4, 4, 52);
+  font-weight: bold;
+}
+.cantainer2p{
+    font-size: 18px;
+    padding: 30px;
+}
+button {
+  padding: 8px 15px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(1, 76, 76);
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
