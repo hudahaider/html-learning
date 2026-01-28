@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.cantainer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+.cantainer h1 {
+  padding: 20px;
+}
+.cantainer p {
+  padding-left: 20px;
+}
+.html-form{
+    background-color: black;
+}
+form {
+  width: 60%;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin: 25px auto; 
+  background-color: #bb8c8c;
+  padding: 30px;
+  border-radius: 10px;
+}
+form >input{
+    height: 30px;
+    background-color: #c6baba;
+    padding-left: 10px;
+}
+.radio{
+    display: flex;
+    gap: 4px;
+}
+.button{
+    margin: auto;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #bf6666;
+}

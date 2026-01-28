@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.cantainer{
+.cantainer-1{
+  margin: 20px;
 padding: 30px;
 text-align: center;
 justify-content: center;
@@ -17,23 +18,23 @@ gap: 20px;
 .headings{
   padding: 30px;
 }
-.cantainer-text h1{
+.cantainer1-text h1{
   font-size: 50px;
   padding-bottom: 20px;
 }
-.cantainer-text h2{
+.cantainer1-text h2{
   color: #0891b2;
   padding-bottom: 30px;
   font-size: 20px;
 }
-.cantainer-text p{
+.cantainer1-text p{
   padding-bottom: 20px;
   font-size: 20px;
 }
 
 .parent {
   display: flex;
-  height: 250px;
+  height:auto;
   width: 100%;
   gap: 20px;
   flex-wrap: wrap;
@@ -61,4 +62,65 @@ justify-content: center;
   color: grey;
   padding-top: 10px;
   font-size: 20px;
+}
+
+
+
+.cantainer-2{
+  margin: 40px;
+padding: 50px;
+}
+.cantainer2-text{
+  text-align: center;
+justify-content: center;
+gap: 20px;
+}
+
+.top{
+  color: #0891b2;
+}
+.cantainer2-text h1{
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.cantainer2-text p{
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.parent-box {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+ padding-top: 30px;
+}
+.box{
+  width: 320px;
+  border: 1px solid rgba(230, 225, 225, 0.856);
+  border-radius: 10px;
+  padding:30px;
+}
+.box:hover{
+ border-color: #0891b2;
+}
+.box h1{
+  font-size: 22px;
+  padding-top: 20px;
+}
+.box p{
+  color: grey;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.box-list{
+  padding: 20px;
+  color: grey;
+  line-height: 28px;
+}
+.space{
+  color: #0891b2;
+  margin-top: 110px;
 }
