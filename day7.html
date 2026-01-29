@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: aqua;
+      }
+      .login {
+        width: 50%;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 8px;
+        border-radius: 10px;
+        background-color: rgb(250, 136, 95);
+        text-align: center;
+        justify-content: center;
+      }
+      .img {
+        text-align: center;
+        justify-content: center;
+      }
+      form > fieldset {
+        padding: 60px;
+      }
+
+      .login-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input {
+        color: black;
+        padding: 15px 15px;
+        border: 1px solid black;
+        border-radius: 40px;
+      }
+      .login-btn {
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+        background-color: rgb(89, 89, 244);
+        color: black;
+        padding: 15px 30px;
+        border: 1px solid black;
+        border-radius: 40px;
+      }
+      .login-btn:hover {
+        background-color: rgb(132, 104, 104);
+      }
+      .forgot-pass {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 60px;
+      }
+    </style>
+
+    <style>
+      .cantainer-2 {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="main">
+     <div class="login">
+      <form action="">
+          <div class="container">
+            <div class="login-holder">
+              <img
+                src="assets\image3.jpg"
+                style="border-radius: 150px; width: 80px"
+                alt=""
+              />
+              <div class="login-items">
+                <h3 style="padding: 10px">Member Login</h3>
+                <label for="">Email</label>
+                <input type="email" placeholder="email address" name="" id="" />
+                <label for="">Password</label>
+                <input type="password" placeholder="password" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="login-btn">Login</button>
+          </div>
+          <div class="forgot-pass">
+            <div>
+              <input type="checkbox" />
+              <label for="">Remember me</label>
+            </div>
+            <a style="color: rgb(89, 89, 244)" href="">Forgot password?</a>
+          </div>
+      </form>
+    </div>
+   </div>
+  </body>
+</html>
+
+<!--  -->

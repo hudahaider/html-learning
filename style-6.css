@@ -35,6 +35,12 @@ form >input{
     display: flex;
     gap: 4px;
 }
+form >select{
+  height: 30px;
+  width: 80px;
+    background-color: #c6baba;
+    padding-left: 10px;
+}
 .button{
     margin: auto;
     padding: 0 30px;
