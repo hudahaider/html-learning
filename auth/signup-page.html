@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup page</title>
-    <link rel="shortcut icon" href="auth\favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     
@@ -21,15 +22,17 @@
     }
 
     body {
-      background: linear-gradient(135deg, #548e9c, #33cc6b);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 .main-container{
     display: flex;
     margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset;
 }
 
     .side-container{
@@ -106,6 +109,25 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    .icons{
+      text-align: center;
+      font-size: 30px;
+      color: #067a96;
+    }
+    .fa-facebook:hover{
+      color: #555;
+    }
+    .fa-envelope:hover{
+      color: #555;
+    }
+    .fa-linkedin:hover{
+      color: #555;
+    }
+    .forgot-pass{
+     display: flex;
+    }
+    
   </style>
 
   <body>
@@ -136,6 +158,14 @@
         <p class="login-text">
           Already have an account? <a href="#">Sign in</a>
         </p>
+        <p>or</p>
+        <p>Signing up with</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        </div>
+
       </form>
     </div>
     </div>
