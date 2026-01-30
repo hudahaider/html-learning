@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="shortcut icon" href="auth\favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+</body>
+</html>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #548e9c, #33cc6b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+.main-container{
+    display: flex;
+    margin: auto;
+}
+
+    .side-container{
+        background: #067a96;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .side-container h1{
+        color: white;
+        text-align: center;
+      margin-top: 160px;
+    }
+
+     .side-container p{
+        color: white;
+        text-align: center;
+      margin-top: 30px;
+    
+    }
+
+    .signup-container {
+      background: #fff;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #0891b2;
+    }
+
+    .signup-container p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0891b2;
+      color: #fff;
+      border: none;
+      border-radius: 31px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #067a96;
+    }
+
+    .login-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-text a {
+      color: #0891b2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <div class="main-container">
+    <div class="side-container">
+        <h1>Come Join Us!</h1>
+        <p>We are excited to have u here. <br> if you haven't an account, signup.</p>
+    </div>
+    <div class="signup-container">
+      <h2>Create Account</h2>
+      <p>Please signup to continue</p>
+
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" />
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password" />
+
+        <button type="submit">Sign Up</button>
+
+        <p class="login-text">
+          Already have an account? <a href="#">Sign in</a>
+        </p>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
