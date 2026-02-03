@@ -129,4 +129,10 @@ textarea:focus {
   .main-right {
     display: none;
   }
+  .groups{
+    flex-direction: column;
+  }
+}
+.groups >div{
+  flex: 1;
 }
