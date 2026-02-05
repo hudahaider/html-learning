@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Dawa</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #ffffff;
+      }
+
+      .container {
+        padding: 80px 20px;
+        justify-items: center;
+        text-align: center;
+      }
+      .container h1 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .para {
+        max-width: 700px;
+        margin: 0 auto 60px;
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+      }
+      .card {
+        background: #fff;
+        padding: 40px 25px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+        transition: 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      }
+      .icon {
+        margin: 0 auto 25px;
+      }
+      .icon img {
+        width: 50px;
+      }
+      .card h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #111;
+      }
+      .card p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      @media screen and (max-width: 600px) {
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+       @media screen and (max-width: 1024px) {
+        .card-grid {
+          padding: 0 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Why Choose Dawa?</h1>
+      <p class="para">
+        Invest simply and with confidence - backed by expert advice, friendly
+        support and a global network of seasoned investors.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="icon">
+            <img src="./grid-images/Hyper-selected-funds.png" alt="" />
+          </div>
+          <h3>Hyper-selected funds</h3>
+          <p>
+            We carefully screen every investment. Covering many fund managers
+            and reviewing multiple funds, we pick only the strongest options for
+            you.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="./grid-images/Decades-of-expertise.png" alt="" />
+          </div>
+          <h3>Decades of expertise</h3>
+          <p>
+            Tap into deep industry know-how and strong connections. Our CEO has
+            20+ years in private equity including roles as Managing Director.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img
+              src="./grid-images/Dedicated-relationship-manager.png"
+              alt=""
+            />
+          </div>
+          <h3>Dedicated relationship manager</h3>
+          <p>
+            Every investor gets a local relationship manager. Reach them by
+            phone, email or in person whenever you want.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="./grid-images/Fully-digital.png" alt="" />
+          </div>
+          <h3>Fully digital</h3>
+          <p>
+            We've made private equity paperless. From onboarding and
+            subscriptions to capital calls, distributions and reports — every
+            step is digitized and available in your account
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="./grid-images/Engaged-community.png" alt="" />
+          </div>
+          <h3>Engaged community</h3>
+          <p>
+            Join our network of various members at Dawa. From webinars and deal
+            talks to many meetups across countries, our community shares
+            insights and builds real connections.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="./grid-images/Secondary-market-flexibility.png" alt="" />
+          </div>
+          <h3>Secondary market flexibility</h3>
+          <p>
+            When your needs change, you can buy or sell stakes on our secondary
+            market. With hundreds of active members, our platform helps you
+            adjust your investments and rebalance your portfolio.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
