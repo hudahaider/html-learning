@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: white;
+        padding: 30px;
+      }
+      .top-box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      .box {
+        display: flex;
+        gap: 15px;
+        margin: 15px 0;
+      }
+      .box button {
+        background:  #4f6cff;
+        color: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        flex: 1;
+      }
+      .box button:hover {
+        background: #8f9eea;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 20px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      .billing {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+      }
+      .billing button {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background: #4f6cff;
+        color: white;
+        flex: 1;
+      }
+      .billing button:hover{
+        background: #8f9eea;
+      }
+
+      .middle-box {
+        background: #4f6cff;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+      .card:hover {
+        border: 2px solid #4f6cff;
+      }
+      .popular:hover {
+        border: 2px solid #4f6cff;
+      }
+      .popular-badge {
+        position: absolute;
+        top: -12px;
+        left: 38%;
+        background: #4f6cff;
+        color: #fff;
+        padding: 4px 10px;
+        font-size: 12px;
+        border-radius: 20px;
+      }
+      .price {
+        font-size: 36px;
+        margin: 15px 0;
+        font-weight: bold;
+      }
+      .card ul {
+        margin: 20px 0;
+      }
+      .card ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      .card button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background: #4f6cff;
+        color: #fff;
+        cursor: pointer;
+      }
+      .card button:hover {
+        background: #8f9eea;
+      }
+
+      @media (max-width: 480px) {
+        .box,
+        .billing {
+          flex-direction: column;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+      .save-btn{
+        position: relative;
+        background-color: white !important;
+        color: black !important;
+      }
+      .save{
+        position: absolute;
+        background-color: rgb(31, 255, 31);
+        border-radius: 40px;
+        padding: 5px 10px;
+        top: -10px;
+        right: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top-box">
+        <h3>I am...</h3>
+        <div class="box">
+          <button>Investor</button>
+          <button>Issuer</button>
+          <button>Broker</button>
+        </div>
+        <h4>Pricing Model</h4>
+        <select>
+          <option>Monthly Subscription</option>
+          <option>Yearly Subscription</option>
+        </select>
+        <h4>Billing Cycle</h4>
+        <div class="billing">
+          <button>Monthly</button>
+          <button class="save-btn">Annual <span class="save">Save 17%</span></button>
+        </div>
+      </div>
+
+      <div class="middle-box">
+        <h2>Monthly Subscription</h2>
+        <p>Pure SaaS model – predictable pricing</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Free</h3>
+          <p>Try before you commit</p>
+          <div class="price">$0</div>
+          <p>Forever</p>
+          <ul>
+            <li>Browse all deals</li>
+            <li>3 AI credits/month</li>
+            <li>Basic tracking</li>
+            <li>Email alerts</li>
+          </ul>
+          <button>Request Demo</button>
+        </div>
+
+        <div class="card popular">
+          <div class="popular-badge">MOST POPULAR</div>
+          <h3>Professional</h3>
+          <p>For active investors</p>
+          <div class="price">$195</div>
+          <small>Per month</small>
+          <ul>
+            <li>Unlimited AI</li>
+            <li>Portfolio tracking</li>
+            <li>Real-time data</li>
+            <li>API access</li>
+            <li>Priority support</li>
+          </ul>
+          <button>Start Free Trial</button>
+        </div>
+
+        <div class="card">
+          <h3>Institutional</h3>
+          <p>For funds & offices</p>
+          <div class="price">$495</div>
+          <small>Per month</small>
+          <ul>
+            <li>Team accounts</li>
+            <li>White-label reports</li>
+            <li>Full API</li>
+            <li>Custom integrations</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button>Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

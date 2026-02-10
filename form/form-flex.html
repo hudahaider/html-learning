@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Form</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: white;
+        padding: 30px;
+      }
+      .container {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .container h2 {
+        margin-bottom: 20px;
+      }
+      .title {
+        font-weight: bold;
+        margin: 25px 0 10px;
+      }
+      .form-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .form-row-full {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      label {
+        margin-bottom: 6px;
+      }
+      input,
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      .radio-group {
+        display: flex;
+        gap: 20px;
+      }
+      .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+      }
+      .btn-1 {
+        background: #4f6cff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+      }
+      .btn-2 {
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        border-radius: 6px;
+      }
+
+      @media (max-width: 768px) {
+        .form-row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Example Form</h2>
+
+      <form>
+        <div class="title">Personal Info</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter first name" />
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter last name" />
+          </div>
+        </div>
+
+        <div class="form-row-full">
+          <div class="form-group">
+            <label>Gender</label>
+            <select>
+              <option>Select an option</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row-full">
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="form-row-full">
+          <div class="form-group">
+            <label>Category</label>
+            <select>
+              <option>Select an option</option>
+              <option>Student</option>
+              <option>Employee</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="title">Address</div>
+        <div class="form-row-full">
+          <div class="form-group">
+            <label>Street</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label>State</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Post Code</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label>Country</label>
+            <select>
+              <option>Select Country</option>
+              <option>Pakistan</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row-full">
+          <label>Membership:</label>
+          <div class="radio-group">
+            <label> <input type="radio" /> Free </label>
+            <label> <input type="radio" /> Premium </label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-1">Save Changes</button>
+          <button class="btn-2">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

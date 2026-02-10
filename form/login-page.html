@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .main {
+      display: flex;
+      height: 100vh;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    .login-container {
+      padding: 60px 80px;
+      width: 50%;
+    }
+    .right-container {
+      background: #067a96;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      width: 50%;
+    }
+    .right-container h1 {
+      color: white;
+    }
+    .login-container h1 {
+      padding: 5px;
+      padding-top: 40px;
+      color: #067a96;
+    }
+    .login-container p {
+      padding: 5px;
+      padding-top: 10px;
+      color: gray;
+    }
+    form > label {
+      margin-top: 30px;
+      margin-bottom: 8px;
+      display: block;
+      color: rgb(102, 101, 101);
+      font-size: 18px;
+    }
+    form > input {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      border-color: rgb(199, 192, 192);
+    }
+    .forgot-pass {
+      display: flex;
+
+      padding: 20px 5px;
+    }
+    .forgot-item {
+      padding-right: 150px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0891b2;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    button:hover {
+      background: #067a96;
+    }
+    a {
+      color: #067a96;
+    }
+    @media screen and (max-width: 750px) {
+      .right-container {
+        display: none;
+      }
+      .login-container{
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="login-container">
+        <h1>Login Account</h1>
+        <p>Enter your email and password to login</p>
+        <form>
+          <label for="">Email</label>
+          <input type="email" placeholder="info@gmail.com" /> <br />
+          <label for="">Password</label>
+          <input type="password" placeholder="Enter your password" />
+        </form>
+        <div class="forgot-pass">
+          <div class="forgot-item">
+            <input type="checkbox" />
+            <label for="">Keep me logged in</label>
+          </div>
+          <a href="">Forgot password?</a>
+        </div>
+        <button>Login in</button> <br />
+
+        <a href="">Don't have an account? Sign up</a>
+      </div>
+
+      <div class="right-container">
+        <h1>Interview AI</h1>
+      </div>
+    </div>
+  </body>
+</html>

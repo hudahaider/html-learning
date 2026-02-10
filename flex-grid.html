@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex vs Grid</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: #f2f2f2;
+        padding: 30px;
+      }
+      .box {
+        width: 100%;
+        border: 1px solid red;
+        padding: 10px;
+      }
+      .box h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .flex-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .flex-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        height: 50px;
+        background: #9be83f;
+      }
+      .flex-middle {
+        display: flex;
+        background: #d97ad9;
+        gap: 5px;
+      }
+      .flex-sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: #7b2de3;
+      }
+      .flex-center {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 5px;
+      }
+      .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        padding-bottom: 120px;
+      }
+      .flex-footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: #d8133a;
+      }
+      .flex-ads {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: #00f5ff;
+      }
+      .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 80px 80px 50px;
+        gap: 5px;
+      }
+      .grid-header {
+        grid-column: span 4;
+        background: #9be83f;
+      }
+      .grid-sidebar {
+         grid-column: span 1;   
+        grid-row: span 3;
+        background: #7b2de3;
+      }
+      .grid-content {
+            grid-column: span 2;
+        grid-row: span 2;
+        background: #d97ad9;
+      }
+      .grid-footer {
+        grid-column: span 2;
+        background: #d8133a;
+      }
+      .grid-ads {
+         grid-column: span 1;
+        grid-row: span 3;
+        background: #00f5ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+    
+      <div class="box">
+        <h2>Flexbox</h2>
+        <div class="flex-layout">
+          <div class="flex-header">Header</div>
+          <div class="flex-middle">
+            <div class="flex-sidebar">Sidebar</div>
+            <div class="flex-center">
+              <div class="main-content">Main Content</div>
+              <div class="flex-footer">Footer</div>
+            </div>
+            <div class="flex-ads">ADS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Grid</h2>
+        <div class="grid-layout">
+          <div class="grid-header">Header</div>
+          <div class="grid-sidebar">Sidebar</div>
+          <div class="grid-content">Main Content</div>
+           <div class="grid-ads">ADS</div>
+          <div class="grid-footer">Footer</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+<body>
+    
+</body>
+</html>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+.main-container{
+    display: flex;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset;
+}
+
+    .side-container{
+        background: #067a96;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .side-container h1{
+        color: white;
+        text-align: center;
+      margin-top: 160px;
+    }
+
+     .side-container p{
+        color: white;
+        text-align: center;
+      margin-top: 30px;
+    
+    }
+
+    .signup-container {
+      background: #fff;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #0891b2;
+    }
+
+    .signup-container p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0891b2;
+      color: #fff;
+      border: none;
+      border-radius: 31px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #067a96;
+    }
+
+    .login-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-text a {
+      color: #0891b2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .icons{
+      text-align: center;
+      font-size: 30px;
+      color: #067a96;
+    }
+    .fa-facebook:hover{
+      color: #555;
+    }
+    .fa-envelope:hover{
+      color: #555;
+    }
+    .fa-linkedin:hover{
+      color: #555;
+    }
+    .forgot-pass{
+     display: flex;
+    }
+    
+  </style>
+
+  <body>
+    <div class="main-container">
+    <div class="side-container">
+        <h1>Come Join Us!</h1>
+        <p>We are excited to have u here. <br> if you haven't an account, signup.</p>
+    </div>
+    <div class="signup-container">
+      <h2>Create Account</h2>
+      <p>Please signup to continue</p>
+
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" />
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password" />
+
+        <button type="submit">Sign Up</button>
+
+        <p class="login-text">
+          Already have an account? <a href="#">Sign in</a>
+        </p>
+        <p>or</p>
+        <p>Signing up with</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

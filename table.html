@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body {
+      background: white;
+      padding: 30px;
+    }
+    .table {
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .table table {
+      width: 100%;
+    }
+    .table th {
+      background: #f5f7fb;
+      color: #333;
+      padding: 12px 15px;
+    }
+    .table td {
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .first-td {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .table td img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    @media (max-width: 480px) {
+      .table {
+        width: 200%;
+      }
+    }
+    @media (max-width: 768px) {
+      .table th,
+      .table td {
+        padding: 10px;
+      }
+      .table td img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+  <body>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Products</th>
+          <th>Catogery</th>
+          <th>Price</th>
+          <th>Status</th>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="first-td">
+              <img src="./assets/macbook.jpg" alt="" />MacBook Pro 13" <br />
+              <span style="color: grey; font: size 15px">2 variants</span>
+            </div>
+          </td>
+          <td>$2399.00</td>
+          <td>Laptop</td>
+          <td>
+            <span
+              style="
+                color: green;
+                background-color: rgb(174, 249, 174);
+                padding: 4px;
+                border-radius: 10px;
+              "
+              >Delivered</span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="first-td">
+              <img src="./assets/apple watch.jpg" alt="" />Apple Watch Ultra
+              <br />
+              <span style="color: grey; font: size 15px">1 variant</span>
+            </div>
+          </td>
+          <td>$879.00</td>
+          <td>Watch</td>
+          <td>
+            <span
+              style="
+                color: orangered;
+                background-color: rgb(243, 208, 196);
+                padding: 4px;
+                border-radius: 10px;
+              "
+              >Pending</span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="first-td">
+              <img src="./assets/iphone15.jpg" alt="" />iPhone 15 Pro Max <br />
+              <span style="color: grey; font: size 15px">2 variants</span>
+            </div>
+          </td>
+          <td>$1869.00</td>
+          <td>SmartPhone</td>
+          <td>
+            <span
+              style="
+                color: green;
+                background-color: rgb(174, 249, 174);
+                padding: 4px;
+                border-radius: 10px;
+              "
+              >Delivered</span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="first-td">
+              <img src="./assets/ipad.jpg" alt="" />iPad Pro 3rd Gen <br />
+              <span style="color: grey; font: size 15px">2 variants</span>
+            </div>
+          </td>
+          <td>$1699.00</td>
+          <td>Electronics</td>
+          <td>
+            <span
+              style="
+                color: red;
+                background-color: rgb(247, 193, 193);
+                padding: 4px;
+                border-radius: 10px;
+              "
+              >Canceled</span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="first-td">
+              <img src="./assets/airpods.jpg" alt="" />AirPods Pro 2nd Gen
+              <br />
+              <span style="color: grey; font: size 15px">1 variants</span>
+            </div>
+          </td>
+          <td>$240.00</td>
+          <td>Accessories</td>
+          <td>
+            <span
+              style="
+                color: green;
+                background-color: rgb(174, 249, 174);
+                padding: 4px;
+                border-radius: 10px;
+              "
+              >Delivered</span
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Form</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: white;
+        padding: 30px;
+      }
+      .container {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .container h2 {
+        margin-bottom: 20px;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .three-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-column: span 2;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 2;
+      }
+      textarea {
+        height: 120px;
+      }
+
+      @media (max-width: 480px) {
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .three-grid {
+          grid-template-columns: 1fr;
+          grid-column: span 1;
+        }
+        .description {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Products Description</h2>
+      <form>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Product Name</label>
+            <input type="text" placeholder="Enter product name" />
+          </div>
+
+          <div class="form-group">
+            <label>Category</label>
+            <select>
+              <option>Select category</option>
+              <option>Electronics</option>
+              <option>Clothes</option>
+              <option>Furniture</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Brand</label>
+            <select>
+              <option>Select brand</option>
+              <option>Samsung</option>
+              <option>Apple</option>
+              <option>HP</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Color</label>
+            <select>
+              <option>Select color</option>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+
+          <div class="three-grid">
+            <div class="form-group">
+              <label>Weight (KG)</label>
+              <input type="number" placeholder="15" />
+            </div>
+
+            <div class="form-group">
+              <label>Length (CM)</label>
+              <input type="number" placeholder="120" />
+            </div>
+
+            <div class="form-group">
+              <label>Width (CM)</label>
+              <input type="number" placeholder="23" />
+            </div>
+          </div>
+
+          <div class="description">
+            <label>Description</label>
+            <textarea placeholder="Info (optional)"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
